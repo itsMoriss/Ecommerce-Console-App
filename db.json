@@ -1,0 +1,16 @@
+{
+    "products": [
+      { "id": 1, "name": "Sleek Wireless Headphones", "price": 49.99 },
+      { "id": 2, "name": "Premium Leather Wallet", "price": 29.99 },
+      { "id": 3, "name": "Elegant Stainless Steel Watch", "price": 89.99 },
+      { "id": 4, "name": "Cozy Fleece Blanket", "price": 39.99 },
+      { "id": 5, "name": "Classic Canvas Sneakers", "price": 59.99 },
+      { "id": 6, "name": "Modern Laptop Backpack", "price": 69.99 },
+      { "id": 7, "name": "Organic Bamboo Cutting Board", "price": 24.99 },
+      { "id": 8, "name": "Aromatherapy Essential Oil Diffuser", "price": 34.99 },
+      { "id": 9, "name": "Gourmet Coffee Blend Set", "price": 19.99 },
+      { "id": 10, "name": "Durable Phone Case with Stand", "price": 14.99 }
+    ],
+    "orders": []
+  }
+  

@@ -1,0 +1,17 @@
+C:\Users\Administrator\desktop\ecommerce-console\obj\Debug\net7.0\ecommerce-console.csproj.AssemblyReference.cache
+C:\Users\Administrator\desktop\ecommerce-console\obj\Debug\net7.0\ecommerce-console.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\desktop\ecommerce-console\obj\Debug\net7.0\ecommerce-console.AssemblyInfoInputs.cache
+C:\Users\Administrator\desktop\ecommerce-console\obj\Debug\net7.0\ecommerce-console.AssemblyInfo.cs
+C:\Users\Administrator\desktop\ecommerce-console\obj\Debug\net7.0\ecommerce-console.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\desktop\ecommerce-console\bin\Debug\net7.0\ecommerce-console.exe
+C:\Users\Administrator\desktop\ecommerce-console\bin\Debug\net7.0\ecommerce-console.deps.json
+C:\Users\Administrator\desktop\ecommerce-console\bin\Debug\net7.0\ecommerce-console.runtimeconfig.json
+C:\Users\Administrator\desktop\ecommerce-console\bin\Debug\net7.0\ecommerce-console.dll
+C:\Users\Administrator\desktop\ecommerce-console\bin\Debug\net7.0\ecommerce-console.pdb
+C:\Users\Administrator\desktop\ecommerce-console\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\Administrator\desktop\ecommerce-console\obj\Debug\net7.0\ecommerce-console.csproj.CopyComplete
+C:\Users\Administrator\desktop\ecommerce-console\obj\Debug\net7.0\ecommerce-console.dll
+C:\Users\Administrator\desktop\ecommerce-console\obj\Debug\net7.0\refint\ecommerce-console.dll
+C:\Users\Administrator\desktop\ecommerce-console\obj\Debug\net7.0\ecommerce-console.pdb
+C:\Users\Administrator\desktop\ecommerce-console\obj\Debug\net7.0\ecommerce-console.genruntimeconfig.cache
+C:\Users\Administrator\desktop\ecommerce-console\obj\Debug\net7.0\ref\ecommerce-console.dll

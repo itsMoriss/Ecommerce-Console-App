@@ -4,6 +4,8 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using System.Net.Http.Json;
 using Newtonsoft.Json;
+using System.Net;
+
 
 public class ProductRepository
 {
@@ -20,7 +22,7 @@ public class ProductRepository
     {
         try
         {
-            HttpResponseMessage response = await _httpClient.PostAsJsonAsync($"{BaseUrl}/products", product);
+            HttpResponseMessage response = await _httpClient.PostAsJsonAsync(BaseUrl, product);
             response.EnsureSuccessStatusCode();
             string responseBody = await response.Content.ReadAsStringAsync();
             return JsonConvert.DeserializeObject<Product>(responseBody);
@@ -37,10 +39,22 @@ public class ProductRepository
     {
         try
         {
-            HttpResponseMessage response = await _httpClient.GetAsync($"{BaseUrl}/products/{id}");
-            response.EnsureSuccessStatusCode();
-            string responseBody = await response.Content.ReadAsStringAsync();
-            return JsonConvert.DeserializeObject<Product>(responseBody);
+            HttpResponseMessage response = await _httpClient.GetAsync($"{BaseUrl}/{id}");
+            if (response.IsSuccessStatusCode)
+            {
+                string responseBody = await response.Content.ReadAsStringAsync();
+                return JsonConvert.DeserializeObject<Product>(responseBody);
+            }
+            else if (response.StatusCode == HttpStatusCode.NotFound)
+            {
+                Console.WriteLine($"Product with ID {id} not found.");
+                return null;
+            }
+            else
+            {
+                Console.WriteLine($"Error retrieving product (Status Code: {response.StatusCode}): {response.ReasonPhrase}");
+                return null;
+            }
         }
         catch (HttpRequestException ex)
         {
@@ -54,10 +68,17 @@ public class ProductRepository
     {
         try
         {
-            HttpResponseMessage response = await _httpClient.GetAsync($"{BaseUrl}/products");
-            response.EnsureSuccessStatusCode();
-            string responseBody = await response.Content.ReadAsStringAsync();
-            return JsonConvert.DeserializeObject<List<Product>>(responseBody);
+            HttpResponseMessage response = await _httpClient.GetAsync(BaseUrl);
+            if (response.IsSuccessStatusCode)
+            {
+                string responseBody = await response.Content.ReadAsStringAsync();
+                return JsonConvert.DeserializeObject<List<Product>>(responseBody);
+            }
+            else
+            {
+                Console.WriteLine($"Error retrieving products (Status Code: {response.StatusCode}): {response.ReasonPhrase}");
+                return new List<Product>();
+            }
         }
         catch (HttpRequestException ex)
         {
@@ -66,12 +87,13 @@ public class ProductRepository
         }
     }
 
+
     // Update a product asynchronously
     public async Task<Product> UpdateAsync(int id, Product product)
     {
         try
         {
-            HttpResponseMessage response = await _httpClient.PutAsJsonAsync($"{BaseUrl}/products/{id}", product);
+            HttpResponseMessage response = await _httpClient.PutAsJsonAsync($"{BaseUrl}/{id}", product);
             response.EnsureSuccessStatusCode();
             string responseBody = await response.Content.ReadAsStringAsync();
             return JsonConvert.DeserializeObject<Product>(responseBody);
@@ -88,7 +110,7 @@ public class ProductRepository
     {
         try
         {
-            HttpResponseMessage response = await _httpClient.DeleteAsync($"{BaseUrl}/products/{id}");
+            HttpResponseMessage response = await _httpClient.DeleteAsync($"{BaseUrl}/{id}"); 
             response.EnsureSuccessStatusCode();
         }
         catch (HttpRequestException ex)
@@ -96,4 +118,5 @@ public class ProductRepository
             Console.WriteLine($"Error deleting product: {ex.Message}");
         }
     }
+
 }

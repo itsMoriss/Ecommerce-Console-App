@@ -19,7 +19,7 @@ public class OrderRepository
     {
         try
         {
-            HttpResponseMessage response = await _httpClient.PostAsJsonAsync($"{BaseUrl}/orders", order);
+            HttpResponseMessage response = await _httpClient.PostAsJsonAsync(BaseUrl, order);
             response.EnsureSuccessStatusCode();
             string responseBody = await response.Content.ReadAsStringAsync();
             return JsonConvert.DeserializeObject<Order>(responseBody);

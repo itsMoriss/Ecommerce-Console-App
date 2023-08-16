@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Administrator\\Desktop\\ecommerce-console\\ecommerce-console.csproj": {}
+    "C:\\Users\\Administrator\\desktop\\ecommerce-console\\ecommerce-console.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Administrator\\Desktop\\ecommerce-console\\ecommerce-console.csproj": {
+    "C:\\Users\\Administrator\\desktop\\ecommerce-console\\ecommerce-console.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Administrator\\Desktop\\ecommerce-console\\ecommerce-console.csproj",
+        "projectUniqueName": "C:\\Users\\Administrator\\desktop\\ecommerce-console\\ecommerce-console.csproj",
         "projectName": "ecommerce-console",
-        "projectPath": "c:\\Users\\Administrator\\Desktop\\ecommerce-console\\ecommerce-console.csproj",
+        "projectPath": "C:\\Users\\Administrator\\desktop\\ecommerce-console\\ecommerce-console.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Administrator\\Desktop\\ecommerce-console\\obj\\",
+        "outputPath": "C:\\Users\\Administrator\\desktop\\ecommerce-console\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config"

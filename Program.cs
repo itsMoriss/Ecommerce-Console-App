@@ -9,8 +9,8 @@ class Program
         var productRepository = new ProductRepository();
         var orderRepository = new OrderRepository();
 
-        Console.WriteLine("Welcome to the Ecommerce Console App!");
-        Console.WriteLine("=====================================");
+        Console.WriteLine("Welcome to the E-commerce Console App!");
+        Console.WriteLine("======================================");
 
         while (true)
         {

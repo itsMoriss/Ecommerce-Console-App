@@ -42,8 +42,8 @@
     },
     {
       "id": 9,
-      "name": "Gourmet Coffee Blend Set",
-      "price": 19.99
+      "name": "Xbox pro",
+      "price": 459.99
     },
     {
       "id": 10,
@@ -57,9 +57,57 @@
     },
     {
       "id": 12,
-      "name": "iphone 15",
-      "price": 999.99
+      "name": "Fendi XXXl",
+      "price": 299.99
     }
   ],
-  "orders": []
+  "orders": [
+    {
+      "id": 1,
+      "products": [
+        {
+          "id": 9,
+          "name": "Xbox pro",
+          "price": 459.99
+        },
+        {
+          "id": 11,
+          "name": "ps5",
+          "price": 500.99
+        },
+        {
+          "id": 13,
+          "name": "Fendi xxxl",
+          "price": 300.99
+        }
+      ],
+      "totalAmount": 1261.97
+    },
+    {
+      "id": 2,
+      "products": [
+        {
+          "id": 1,
+          "name": "Sleek Wireless Headphones",
+          "price": 49.99
+        },
+        {
+          "id": 3,
+          "name": "Elegant Stainless Steel Watch",
+          "price": 89.99
+        },
+        {
+          "id": 5,
+          "name": "Classic Canvas Sneakers",
+          "price": 59.99
+        },
+        {
+          "id": 9,
+          "name": "Xbox pro",
+          "price": 459.99
+        }
+      ],
+      "totalAmount": 659.96
+    }
+  ]
 }
